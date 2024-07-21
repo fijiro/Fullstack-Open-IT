@@ -15,15 +15,20 @@ const App = () => {
     const [selected, setSelected] = useState(0)
     //Create array of 0's for anecdotes length and create states for each
     const [votes, setVotes] = useState(Array(anecdotes.length).fill(0))
+    //Find most voted anecdote
+    const best = votes.indexOf(Math.max(...votes))
 
     return (
         <div>
+            <h1>Anecdote of the day</h1>
             {anecdotes[selected]}
             <p>has {votes[selected]} votes</p>
             <p>
                 <button onClick={() => { const copy = [...votes]; copy[selected] += 1; setVotes(copy) } }>Vote</button>
                 <button onClick={() => { setSelected((selected + 1) % anecdotes.length) }}>next anecdote</button>
             </p>
+            <h1>Anecdote with the most votes</h1>
+            {anecdotes[best]}
         </div>
     )
 }
