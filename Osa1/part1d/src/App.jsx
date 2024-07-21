@@ -1,18 +1,28 @@
 import { useState } from 'react'
 
-const Statistics = ({good,neutral,bad }) => {
+const Statistics = ({ good, neutral, bad }) => {
     const totalVotes = good + neutral + bad
-    if(totalVotes == 0) return <div> No feedback given</div>
+    if (totalVotes == 0) return <div> No feedback given</div>
     return (
         <div>
-            <div> good {good}</div>
-            <div>neutral {neutral}</div>
-            <div>bad {bad}</div>
-            <div>all {totalVotes}</div>
-            <div>average {(good - bad) / (totalVotes)}</div >
-            <div>positive {good / totalVotes * 100} %</div>
+            <StatisticLine text="good" value={good} />
+            <StatisticLine text="neutral" value={neutral} />
+            <StatisticLine text="bad" value={bad} />
+            <StatisticLine text="all" value={totalVotes} />
+            <StatisticLine text="average" value={(good - bad) / (totalVotes)} />
+            <StatisticLine text="positive" value={good / totalVotes * 100} />
         </div>
     )
+}
+const StatisticLine = ({ text, value }) => {
+    return (
+        <div>
+            {text} {value}
+        </div>
+    )
+}
+const Button = ({ onClickAction, name }) => {
+    return <button onClick={onClickAction}> {name} </button>
 }
 const App = () => {
     // tallenna napit omaan tilaansa
@@ -24,9 +34,9 @@ const App = () => {
         <div>
             <h1>give feedback</h1>
             <div>
-                <button onClick={() => { setGood(good + 1) }}> good </button>
-                <button onClick={() => { setNeutral(neutral + 1) }}> neutral </button>
-                <button onClick={() => { setBad(bad + 1) }}> bad </button>
+                <Button onClickAction={() => { setGood(good + 1) }} name="good" />
+                <Button onClickAction={() => { setNeutral(neutral + 1) }} name="neutral" />
+                <Button onClickAction={() => { setBad(bad + 1) }} name="bad" />
             </div>
             <h1>statistics</h1>
             <Statistics good={good} neutral={neutral} bad={bad} />
