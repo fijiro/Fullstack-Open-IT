@@ -1,9 +1,9 @@
 import Total from "./Total.jsx"
 
-const Part = (part) => {
+const Part = (props) => {
     return (
         <div>
-            <p>{part.partName} {<Total exercises={part.exercises} />}</p>
+            <p>{props.part.name} {<Total exercises={props.part.exercises} />}</p>
         </div>
     )
 }
