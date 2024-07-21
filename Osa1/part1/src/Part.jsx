@@ -3,7 +3,7 @@ import Total from "./Total.jsx"
 const Part = (part) => {
     return (
         <div>
-            <p>{part.partName} {<Total exercises={part.exercises} />}</p>
+            <p>{part.part.name} {<Total exercises={part.part.exercises} />}</p>
         </div>
     )
 }
