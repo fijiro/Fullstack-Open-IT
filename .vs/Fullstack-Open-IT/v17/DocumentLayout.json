@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "D:\\VSProjects\\Fullstack-Open-IT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa1\\part1\\src\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\Content.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa2\\part2\\src\\Content.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa1\\part1\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa2\\part2\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa1\\part1\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\Course.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa2\\part2\\src\\Course.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\Content.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa1\\part1\\src\\Content.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\Total.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa1\\part1\\src\\Total.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\osa1||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa1\\osa1||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Osa2\\part2\\src\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,80 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Total.jsx",
-              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\Total.jsx",
-              "RelativeDocumentMoniker": "Osa1\\part1\\src\\Total.jsx",
-              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\Total.jsx",
-              "RelativeToolTip": "Osa1\\part1\\src\\Total.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "DocumentIndex": 3,
+              "Title": "Header.jsx",
+              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\Header.jsx",
+              "RelativeDocumentMoniker": "Osa2\\part2\\src\\Header.jsx",
+              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\Header.jsx",
+              "RelativeToolTip": "Osa2\\part2\\src\\Header.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-07-20T17:17:29.862Z",
+              "WhenOpened": "2024-07-25T10:38:14.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Content.jsx",
-              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\Content.jsx",
-              "RelativeDocumentMoniker": "Osa1\\part1\\src\\Content.jsx",
-              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\Content.jsx",
-              "RelativeToolTip": "Osa1\\part1\\src\\Content.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "DocumentIndex": 2,
+              "Title": "Course.jsx",
+              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\Course.jsx",
+              "RelativeDocumentMoniker": "Osa2\\part2\\src\\Course.jsx",
+              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\Course.jsx",
+              "RelativeToolTip": "Osa2\\part2\\src\\Course.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-07-20T17:17:18.509Z",
+              "WhenOpened": "2024-07-25T10:32:19.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Header.jsx",
-              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\Header.jsx",
-              "RelativeDocumentMoniker": "Osa1\\part1\\src\\Header.jsx",
-              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\Header.jsx",
-              "RelativeToolTip": "Osa1\\part1\\src\\Header.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "Title": "Content.jsx",
+              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\Content.jsx",
+              "RelativeDocumentMoniker": "Osa2\\part2\\src\\Content.jsx",
+              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\Content.jsx",
+              "RelativeToolTip": "Osa2\\part2\\src\\Content.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-07-20T17:16:46.859Z",
+              "WhenOpened": "2024-07-21T15:38:11.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "App.jsx",
-              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\App.jsx",
-              "RelativeDocumentMoniker": "Osa1\\part1\\src\\App.jsx",
-              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\App.jsx",
-              "RelativeToolTip": "Osa1\\part1\\src\\App.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\App.jsx",
+              "RelativeDocumentMoniker": "Osa2\\part2\\src\\App.jsx",
+              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa2\\part2\\src\\App.jsx",
+              "RelativeToolTip": "Osa2\\part2\\src\\App.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-07-20T17:08:35.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.jsx",
-              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\main.jsx",
-              "RelativeDocumentMoniker": "Osa1\\part1\\src\\main.jsx",
-              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\part1\\src\\main.jsx",
-              "RelativeToolTip": "Osa1\\part1\\src\\main.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-07-20T17:07:48.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "osa1",
-              "DocumentMoniker": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\osa1",
-              "RelativeDocumentMoniker": "Osa1\\osa1",
-              "ToolTip": "D:\\VSProjects\\Fullstack-Open-IT\\Osa1\\osa1",
-              "RelativeToolTip": "Osa1\\osa1",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-20T17:04:31.976Z",
+              "WhenOpened": "2024-07-21T15:37:37.072Z",
               "EditorCaption": ""
             }
           ]

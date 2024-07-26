@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Osa1",
-    "\\Osa1\\part1",
-    "\\Osa1\\part1\\src"
+    "\\Osa2",
+    "\\Osa2\\part2",
+    "\\Osa2\\part2\\src"
   ],
-  "SelectedNode": "\\Osa1\\part1\\src\\Header.jsx",
+  "SelectedNode": "\\Osa2\\part2\\src\\Content.jsx",
   "PreviewInSolutionExplorer": false
 }
