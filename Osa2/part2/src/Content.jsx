@@ -8,6 +8,8 @@ const Content = ({course}) => {
             <Part part={course.parts[0]} />
             <Part part={course.parts[1]} />
             <Part part={course.parts[2]} />
+            {/* increase sum=0 by part.exercise amount for each {part} in {course.parts} */ }
+            <b>total of {course.parts.reduce((sum, { exercises }) => sum + exercises, 0)} exercises</b>
         </div>
     )
 }
