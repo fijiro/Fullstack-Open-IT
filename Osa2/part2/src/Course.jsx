@@ -1,10 +1,12 @@
 import Content from "./Content.jsx"
-const Course = ({course}) => {
-    console.log("COURSE:", course)
+const Course = ({courses}) => {
+    console.log("COURSES:", courses)
 
     return (
         <div>
-            <Content course={course} />
+            {courses.map(course => (
+                <Content course={course} />
+            )) }
         </div>
     )
 }
