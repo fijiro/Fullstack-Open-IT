@@ -1,9 +1,36 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 
-function App() {
+const App = () => {
+
+    const [persons, setPersons] = useState([])
+
+    const hook = () => {
+        console.log('effect')
+        axios
+            .get('http://localhost:3001/persons')
+            .then(response => {
+                console.log('promise fulfilled')
+                setPersons(response.data)
+            })
+    }
+
+    useEffect(hook, [])
+    console.log('render', persons, 'persons')
+}
+export default App
+/*
+const PersonForm = () => {
+    return (
+        <div>PersonFORM</div>
+    )
+}
+
+const App = () => {
     const [persons, setPersons] = useState([{ name: 'Arto Hellas', number: "040 1234567" }])
     const [newName, setNewName] = useState('')
     const [newNumber, setNewNumber] = useState('')
+    const [newFilter, setNewFilter] = useState('')
     const changeName = (event) => {
         setNewName(event.target.value)
     }
@@ -19,27 +46,28 @@ function App() {
         setPersons(persons.concat({ name: newName, number: newNumber }))
         setNewName("")
         setNewNumber("")
+        setNewFilter("")
     }
 
     return (
         <div>
             <h2>Phonebook</h2>
             <form onSubmit={addPerson}>
-                <div>
-                    name: <input value={newName} onChange={changeName} />
-                </div>
+                {/*<div>filter: <input value={newFilter} onChange={changeFilter} /></div>//*}
+                <PersonForm/>
+                <div>name: <input value={newName} onChange={changeName} /></div>
                 <div>number: <input value={newNumber} onChange={changeNumber} /></div>
                 <div>
                     <button type="submit">add</button>
                 </div>
-            </form>
+            </form >
             <h2>Numbers</h2>
             <ul>
                 {persons.map((person, index) =>
                     <li key={index}>{person.name}; {person.number}</li>
                 )}
             </ul>
-        </div>
+        </div >
     );
 }
 
@@ -47,7 +75,7 @@ export default App;
 
 
 
-/*
+
 import { useState } from 'react'
 import Note from './Note'
 
@@ -155,4 +183,4 @@ const App = () => {
     )
 }
 
-export default App*/
+export default App */

@@ -3,8 +3,9 @@
     "",
     "\\Osa2",
     "\\Osa2\\part2",
-    "\\Osa2\\part2\\src"
+    "\\Osa2\\part2\\src",
+    "\\Osa2\\part2\\src\\components"
   ],
-  "SelectedNode": "\\Osa2\\part2",
+  "SelectedNode": "\\Osa2\\part2\\src\\App.jsx",
   "PreviewInSolutionExplorer": false
 }
