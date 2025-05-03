@@ -54,3 +54,32 @@ app.delete('/api/persons/:id', (request, response) => {
     persons = persons.filter(person => person.id !== id)
     response.status(204).end()
 })
+
+app.post('/api/persons', (request, response) => {
+    const randomId = generateId()
+    while (persons.some(person => person.id === randomId)) {
+        randomId = generateId()
+        if (persons.length === 80) {
+            response.status(400).send("No more ids available")
+            return
+        }
+    }
+    const person = request.body
+    person.id = randomId
+    if (!person.name || !person.number) {
+        return response.status(400).json({
+            error: 'name or number missing'
+        })
+    }
+    else if (persons.some(p => p.name === person.name)) {
+        return response.status(400).json({
+            error: `${person.name} is already added to the phonebook`
+        })
+    }
+    persons = persons.concat(person)
+    response.json(person)
+})
+
+const generateId = () => {
+    return Math.floor(Math.random() * 100)
+}
