@@ -12,11 +12,10 @@ const App = () => {
 
     useEffect(() => {
         personService.getAll()
-            .then(initialPersons => {
-                setPersons(initialPersons)
+            .then(allPersons => {
+                setPersons(allPersons)
             })
     }, [])
-
     const changeName = (event) => setNewName(event.target.value)
     const changeNumber = (event) => setNewNumber(event.target.value)
     const changeFilter = (event) => setNewFilter(event.target.value)
@@ -27,12 +26,23 @@ const App = () => {
             alert(`${newName} is already added to the phonebook`)
             return
         }
-        const newPerson = { name: newName, number: newNumber, id: String(persons.length) }
+        const newPerson = { name: newName, number: newNumber, id: String(persons.length+1) }
         setPersons(persons.concat(newPerson))
-        personService.create(newPerson)
+        personService
+            .create(newPerson)
         setNewName("")
         setNewNumber("")
         setNewFilter("")
+    }
+
+    const removePerson = (id) => {
+        if (!window.confirm(`Delete ${persons.find(person => person.id === id).name}?`)) return
+        personService
+            .remove(id)
+            .then(() => {
+                setPersons(persons.filter(person => person.id !== id))
+            }
+        )
     }
 
     const filteredPersons = persons.filter(person =>
@@ -52,7 +62,8 @@ const App = () => {
                 onNumberChange={changeNumber}
             />
             <h3>Numbers</h3>
-            <Persons persons={filteredPersons} />
+            <Persons persons={filteredPersons} removeFunction={removePerson} />
+
         </div>
     )
 }
