@@ -10,26 +10,25 @@ const App = () => {
     const [newNumber, setNewNumber] = useState("")
     const [newFilter, setNewFilter] = useState("")
 
-    useEffect(() => {
-        personService.getAll()
-            .then(allPersons => {
-                setPersons(allPersons)
-            })
-    }, [])
     const changeName = (event) => setNewName(event.target.value)
     const changeNumber = (event) => setNewNumber(event.target.value)
     const changeFilter = (event) => setNewFilter(event.target.value)
 
     const addPerson = (event) => {
         event.preventDefault()
+        var newPerson = { name: newName, number: newNumber, id: Math.max(...persons.map(p => Number(p.id)) + 1) }
         if (persons.some(person => person.name === newName)) {
-            alert(`${newName} is already added to the phonebook`)
+            newPerson.id = persons.find(person => person.name === newName).id
+            if (window.confirm(`${newName} is already added to the phonebook, replace the old number with a new one?`)) {
+                personService
+                    .update(newPerson.id, newPerson)
+                    .then(updatePersons)
+            }
             return
         }
-        const newPerson = { name: newName, number: newNumber, id: String(persons.length+1) }
-        setPersons(persons.concat(newPerson))
         personService
             .create(newPerson)
+            .then(updatePersons)
         setNewName("")
         setNewNumber("")
         setNewFilter("")
@@ -39,15 +38,21 @@ const App = () => {
         if (!window.confirm(`Delete ${persons.find(person => person.id === id).name}?`)) return
         personService
             .remove(id)
-            .then(() => {
-                setPersons(persons.filter(person => person.id !== id))
-            }
-        )
+            .then(updatePersons)
+    }
+
+    const updatePersons = () => {
+        console.log("Updating persons ")
+        personService
+            .getAll()
+            .then(allPersons => { setPersons(allPersons) })
     }
 
     const filteredPersons = persons.filter(person =>
         newFilter === "" || person.name.toLowerCase().includes(newFilter.toLowerCase())
     )
+
+    useEffect(updatePersons, [])
 
     return (
         <div>
