@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Osa2",
-    "\\Osa2\\part2",
-    "\\Osa2\\part2\\src",
-    "\\Osa2\\part2\\src\\components"
+    "\\Osa2\\Countries",
+    "\\Osa3",
+    "\\Osa3\\puhelinluettelo"
   ],
-  "SelectedNode": "\\Osa2\\part2\\src\\App.jsx",
+  "SelectedNode": "\\Osa3\\puhelinluettelo\\index.js",
   "PreviewInSolutionExplorer": false
 }
