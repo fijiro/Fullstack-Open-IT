@@ -19,7 +19,7 @@ const App = () => {
     const addPerson = (event) => {
         event.preventDefault()
         updatePersons()
-        var newPerson = { name: newName, number: newNumber, id: String(Math.max(...persons.map(p => Number(p.id))) + 1) }
+        var newPerson = { name: newName, number: newNumber, id: (Math.max(...persons.map(p => Number(p.id))) + 1) }
         if (newName === "" || newNumber === "") return
         if (persons.some(person => person.name === newName)) {
             newPerson.id = persons.find(person => person.name === newName).id

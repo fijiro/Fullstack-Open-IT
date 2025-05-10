@@ -4,8 +4,8 @@ const app = express()
 var morgan = require('morgan')
 const cors = require('cors')
 
-app.use(express.json())
 app.use(cors())
+app.use(express.json())
 
 morgan.token("body", (req) => { return req.method === "POST" ? JSON.stringify(req.body) : "" })
 
@@ -15,22 +15,22 @@ let persons = [
     {
         "name": "Arto Hellas",
         "number": "040-123456",
-        "id": "1"
+        "id": 1
     },
     {
         "name": "Ada Lovelace",
         "number": "39-44-5323523",
-        "id": "2"
+        "id": 2
     },
     {
         "name": "Dan Abramov",
         "number": "12-43-234345",
-        "id": "3"
+        "id": 3
     },
     {
         "name": "Mary Poppendieck",
         "number": "39-23-6423122",
-        "id": "4"
+        "id": 4
     }
 ]
 
@@ -48,7 +48,6 @@ app.get('/info', (request, response) => {
         <br><br>
         ${new Date()}`
     );
-    response.send()
 })
 
 app.get('/api/persons/:id', (request, response) => {
@@ -58,7 +57,7 @@ app.get('/api/persons/:id', (request, response) => {
 })
 
 app.delete('/api/persons/:id', (request, response) => {
-    const id = request.params.id
+    const id = Number(request.params.id)
     persons = persons.filter(person => person.id !== id)
     response.status(204).end()
 })
@@ -67,7 +66,7 @@ app.post('/api/persons', (request, response) => {
     const randomId = generateId()
     while (persons.some(person => person.id === randomId)) {
         randomId = generateId()
-        if (persons.length === 80) {
+        if (persons.length === 5) {
             response.status(400).send("No more ids available")
             return
         }
