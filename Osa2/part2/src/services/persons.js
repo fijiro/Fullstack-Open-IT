@@ -16,13 +16,13 @@ const create = (newObject) => {
 
 const update = (id, newObject) => {
     return axios
-        .put(`${baseUrl}/${id}`, newObject)
+        .put(`${baseUrl}/${id.toString()}`, newObject)
         .then((response) => response.data)
 }
 
 const remove = (id) => {
     return axios
-        .delete(`${baseUrl}/${id}`)
+        .delete(`${baseUrl}/${id.toString()}`)
         .then((response) => response.data)
 }
 
