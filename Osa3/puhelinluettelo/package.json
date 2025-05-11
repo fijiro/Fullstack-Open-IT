@@ -7,14 +7,15 @@
     "start": "node index.js",
     "dev": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "rimraf dist && cd ../../Osa2/part2 && npm run build && xcopy dist ../../Osa3/puhelinluettelo /s /e /y",
+    "build:ui": "rimraf dist && cd ../../Osa2/part2 && npm run build && robocopy dist ../../Osa3/puhelinluettelo/dist /e",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Iiro Toivanen",
   "license": "MIT",
   "dependencies": {
     "express": "^5.1.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "vite": "^4.4.5"
